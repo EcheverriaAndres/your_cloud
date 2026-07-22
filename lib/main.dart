@@ -26,9 +26,15 @@ void main() async {
 
   );
 
+  await Supabase.initialize(
+    url: 'https://ihzcyklvanyrykiacopo.supabase.co',
+    publishableKey: 'sb_publishable_FeKFrE497mruapOySZweJQ_HCHmoX6l',
+  );
 
   runApp(const YurCloudApp());
 }
+
+
 
 class YurCloudApp extends StatelessWidget {
   const YurCloudApp({super.key});
